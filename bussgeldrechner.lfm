@@ -1,0 +1,427 @@
+object Form1: TForm1
+  Left = 1292
+  Height = 600
+  Top = 58
+  Width = 800
+  Caption = 'Bußgeldrechner'
+  ClientHeight = 600
+  ClientWidth = 800
+  LCLVersion = '1.8.0.6'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 800
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 0
+    object Geschwindigkeit: TTabSheet
+      Caption = 'Geschwindigkeit'
+      ClientHeight = 572
+      ClientWidth = 792
+      object tbxZugelasseneGeschwindigkeit: TEdit
+        Left = 50
+        Height = 23
+        Top = 150
+        Width = 206
+        TabOrder = 0
+        Text = 'Zugelassene Geschwindigkeit'
+      end
+      object tbxGefahreneGeschwindigkeit: TEdit
+        Left = 50
+        Height = 23
+        Top = 75
+        Width = 206
+        TabOrder = 1
+        Text = 'Gefahrene Geschwindigkeit'
+      end
+      object RadioGroup1: TRadioGroup
+        Left = 328
+        Height = 73
+        Top = 225
+        Width = 200
+        AutoFill = True
+        Caption = 'Wo'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 53
+        ClientWidth = 196
+        TabOrder = 2
+        object rdbtnWoInnerorts: TRadioButton
+          Left = 6
+          Height = 27
+          Top = 0
+          Width = 184
+          Caption = 'innerorts'
+          TabOrder = 0
+        end
+        object rdbtnWoAusserorts: TRadioButton
+          Left = 6
+          Height = 26
+          Top = 27
+          Width = 184
+          Caption = 'außerorts'
+          TabOrder = 1
+        end
+      end
+      object RadioGroup2: TRadioGroup
+        Left = 50
+        Height = 73
+        Top = 225
+        Width = 209
+        AutoFill = True
+        Caption = 'Fahrzeug'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 53
+        ClientWidth = 205
+        TabOrder = 3
+        object rdbtnFahrzeugPKW: TRadioButton
+          Left = 6
+          Height = 27
+          Top = 0
+          Width = 193
+          Caption = 'PKW'
+          TabOrder = 0
+        end
+        object rdbtnFahrzeugLKW: TRadioButton
+          Left = 6
+          Height = 26
+          Top = 27
+          Width = 193
+          Caption = 'LKW'
+          TabOrder = 1
+        end
+      end
+      object RadioGroup3: TRadioGroup
+        Left = 56
+        Height = 73
+        Top = 336
+        Width = 200
+        AutoFill = True
+        Caption = 'Toleranz abziehen'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 53
+        ClientWidth = 196
+        TabOrder = 4
+        object rdbtnToleranzTrue: TRadioButton
+          Left = 6
+          Height = 27
+          Top = 0
+          Width = 184
+          Caption = 'Ja'
+          TabOrder = 0
+        end
+        object rdbtnToleranzFalse: TRadioButton
+          Left = 6
+          Height = 26
+          Top = 27
+          Width = 184
+          Caption = 'Nein'
+          TabOrder = 1
+        end
+      end
+      object btnBerechnen: TButton
+        Left = 280
+        Height = 41
+        Top = 368
+        Width = 99
+        Caption = 'Berechnen'
+        OnClick = btnBerechnenClick
+        TabOrder = 5
+      end
+      object lblBussgeld: TLabel
+        Left = 408
+        Height = 15
+        Top = 368
+        Width = 44
+        Caption = 'Bußgeld'
+        ParentColor = False
+      end
+      object lblBussgeldBetrag: TLabel
+        Left = 418
+        Height = 15
+        Top = 394
+        Width = 34
+        Caption = 'Betrag'
+        ParentColor = False
+      end
+      object Label1: TLabel
+        Left = 504
+        Height = 15
+        Top = 368
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+      object lblPunkte: TLabel
+        Left = 504
+        Height = 15
+        Top = 394
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Alkohol'
+      ClientHeight = 572
+      ClientWidth = 792
+      object RadioGroup4: TRadioGroup
+        Left = 50
+        Height = 105
+        Top = 160
+        Width = 185
+        AutoFill = True
+        Caption = 'In der Probezeit'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 85
+        ClientWidth = 181
+        TabOrder = 0
+        object rdbtnProbezeitTrue: TRadioButton
+          Left = 6
+          Height = 43
+          Top = 0
+          Width = 169
+          Caption = 'Ja'
+          TabOrder = 0
+        end
+        object rdbtnProbezeitFalse: TRadioButton
+          Left = 6
+          Height = 42
+          Top = 43
+          Width = 169
+          Caption = 'Nein'
+          TabOrder = 1
+        end
+      end
+      object tbxPromille: TEdit
+        Left = 50
+        Height = 23
+        Top = 88
+        Width = 80
+        TabOrder = 1
+        Text = 'Promille'
+      end
+      object RadioGroup5: TRadioGroup
+        Left = 304
+        Height = 105
+        Top = 160
+        Width = 185
+        AutoFill = True
+        Caption = 'Vorherige Alkoholverstöße'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 85
+        ClientWidth = 181
+        TabOrder = 2
+        object rdbtnVerstoss0: TRadioButton
+          Left = 6
+          Height = 29
+          Top = 0
+          Width = 169
+          Caption = '0'
+          TabOrder = 0
+        end
+        object rdbtnVerstoss1: TRadioButton
+          Left = 6
+          Height = 29
+          Top = 29
+          Width = 169
+          Caption = '1'
+          TabOrder = 1
+        end
+        object rdbtnVerstoss2: TRadioButton
+          Left = 6
+          Height = 27
+          Top = 58
+          Width = 169
+          Caption = '2 oder mehr'
+          TabOrder = 2
+        end
+      end
+      object btnBerechnenAlkohol: TButton
+        Left = 56
+        Height = 41
+        Top = 304
+        Width = 104
+        Caption = 'Berechnen'
+        OnClick = btnBerechnenAlkoholClick
+        TabOrder = 3
+      end
+      object Label2: TLabel
+        Left = 216
+        Height = 15
+        Top = 304
+        Width = 30
+        Caption = 'Strafe'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 376
+        Height = 15
+        Top = 304
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+      object lblStrafe: TLabel
+        Left = 216
+        Height = 15
+        Top = 330
+        Width = 30
+        Caption = 'Strafe'
+        ParentColor = False
+      end
+      object lblPunkteAlkohol: TLabel
+        Left = 376
+        Height = 15
+        Top = 328
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Reifen'
+      ClientHeight = 572
+      ClientWidth = 792
+      object RadioGroup6: TRadioGroup
+        Left = 50
+        Height = 105
+        Top = 56
+        Width = 185
+        AutoFill = True
+        Caption = 'Vergehen'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 85
+        ClientWidth = 181
+        TabOrder = 0
+        object rdbtnAbgefahreneReifen: TRadioButton
+          Left = 6
+          Height = 43
+          Top = 0
+          Width = 169
+          Caption = 'Abgefahrene Reifen'
+          TabOrder = 0
+        end
+        object rdbtnSommerreifen: TRadioButton
+          Left = 6
+          Height = 42
+          Top = 43
+          Width = 169
+          Caption = 'Sommerreifen bei Glätte'
+          TabOrder = 1
+        end
+      end
+      object RadioGroup7: TRadioGroup
+        Left = 50
+        Height = 105
+        Top = 192
+        Width = 185
+        AutoFill = True
+        Caption = 'Behinderung des Verkehrs'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 85
+        ClientWidth = 181
+        TabOrder = 1
+        object rdbtnBehinderungTrue: TRadioButton
+          Left = 6
+          Height = 43
+          Top = 0
+          Width = 169
+          Caption = 'Ja'
+          TabOrder = 0
+        end
+        object rdbtnBehinderungFalse: TRadioButton
+          Left = 6
+          Height = 42
+          Top = 43
+          Width = 169
+          Caption = 'Nein'
+          TabOrder = 1
+        end
+      end
+      object btnBerechnenReifen: TButton
+        Left = 320
+        Height = 25
+        Top = 272
+        Width = 96
+        Caption = 'Berechnen'
+        OnClick = btnBerechnenReifenClick
+        TabOrder = 2
+      end
+      object Label4: TLabel
+        Left = 296
+        Height = 15
+        Top = 192
+        Width = 44
+        Caption = 'Bußgeld'
+        ParentColor = False
+      end
+      object lblBetragReifen: TLabel
+        Left = 296
+        Height = 15
+        Top = 232
+        Width = 34
+        Caption = 'Betrag'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 392
+        Height = 15
+        Top = 192
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+      object lblPunkteReifen: TLabel
+        Left = 392
+        Height = 15
+        Top = 232
+        Width = 37
+        Caption = 'Punkte'
+        ParentColor = False
+      end
+    end
+  end
+end

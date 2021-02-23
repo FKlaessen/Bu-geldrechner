@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="bussgeldrechner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Bussgeldrechner"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="333"/>
+        <CursorPos X="84" Y="89"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="72" Column="34" TopLine="72"/>
+      </Position1>
+      <Position2>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="73" Column="34" TopLine="73"/>
+      </Position2>
+      <Position3>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="74" Column="34" TopLine="74"/>
+      </Position3>
+      <Position4>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="75" Column="34" TopLine="75"/>
+      </Position4>
+      <Position5>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="76" Column="34" TopLine="76"/>
+      </Position5>
+      <Position6>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="77" Column="34" TopLine="77"/>
+      </Position6>
+      <Position7>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="79" Column="34" TopLine="79"/>
+      </Position7>
+      <Position8>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="301" Column="23" TopLine="289"/>
+      </Position8>
+      <Position9>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="275" Column="44" TopLine="260"/>
+      </Position9>
+      <Position10>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="305" Column="18" TopLine="278"/>
+      </Position10>
+      <Position11>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="299" Column="11" TopLine="279"/>
+      </Position11>
+      <Position12>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="305" Column="49" TopLine="279"/>
+      </Position12>
+      <Position13>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="284" Column="43" TopLine="268"/>
+      </Position13>
+      <Position14>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="285" Column="43" TopLine="269"/>
+      </Position14>
+      <Position15>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="286" Column="43" TopLine="270"/>
+      </Position15>
+      <Position16>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="287" Column="43" TopLine="271"/>
+      </Position16>
+      <Position17>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="288" Column="43" TopLine="272"/>
+      </Position17>
+      <Position18>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="289" Column="43" TopLine="273"/>
+      </Position18>
+      <Position19>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="290" Column="43" TopLine="274"/>
+      </Position19>
+      <Position20>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="291" Column="43" TopLine="275"/>
+      </Position20>
+      <Position21>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="292" Column="43" TopLine="276"/>
+      </Position21>
+      <Position22>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="293" Column="43" TopLine="277"/>
+      </Position22>
+      <Position23>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="294" Column="43" TopLine="278"/>
+      </Position23>
+      <Position24>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="301" Column="43" TopLine="280"/>
+      </Position24>
+      <Position25>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="288" Column="187" TopLine="278"/>
+      </Position25>
+      <Position26>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="294" Column="33" TopLine="274"/>
+      </Position26>
+      <Position27>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="288" Column="52" TopLine="274"/>
+      </Position27>
+      <Position28>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="289" Column="140" TopLine="274"/>
+      </Position28>
+      <Position29>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="290" Column="6" TopLine="268"/>
+      </Position29>
+      <Position30>
+        <Filename Value="bussgeldrechner.pas"/>
+        <Caret Line="293" Column="10" TopLine="276"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
